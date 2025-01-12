@@ -1,4 +1,4 @@
-FROM flink:1.20
+FROM --platform=${TARGETPLATFORM:-linux/amd64} flink:1.20
 
 ARG MAVEN_MIRROR="https://maven.aliyun.com/repository/public"
 
